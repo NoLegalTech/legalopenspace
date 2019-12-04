@@ -966,14 +966,17 @@ a {
 
 #date-countdown .countdown-block {
   display: inline-block;
-  margin: 0 10px;
+  margin-top: 0px;
+  margin-left: 0px;
+  margin-right: 20px;
+  margin-bottom: 20px;
   border: 1px solid #ccc;
   text-align: center;
   width: 90px;
   height: 90px;
   padding-top: 18px;
   border-radius: 4px;
-  margin-bottom: 20px; }
+ }
   #date-countdown .countdown-block:first-child {
     margin-left: 0; }
 
