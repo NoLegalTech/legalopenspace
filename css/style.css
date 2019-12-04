@@ -1457,11 +1457,6 @@ a {
     transform: scale(1.05); }
 
 
-img.organizer {
--webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
-    filter: grayscale(100%);
-}
-
 
 iframe.large {
     display: inline;
@@ -1502,3 +1497,40 @@ iframe.small {
         display: inline;
     }
 }
+
+img.sponsor {
+    -webkit-filter: grayscale(100%);
+    -moz-filter: grayscale(100%);
+    filter: grayscale(100%);
+    transition: all 0.5s ease;
+}
+
+img.sponsor:hover {
+    -webkit-filter: grayscale(0%);
+    -moz-filter: grayscale(0%);
+    filter: grayscale(0%);
+}
+
+img.sponsor.fade {
+    transition: opacity 0.5s;
+    -webkit-transition: opacity 0.5s;
+    opacity: 0.5;
+}
+
+img.sponsor.fade:hover {
+    opacity: 1;
+}
+
+img.organizer {
+    -webkit-filter: grayscale(100%);
+    -moz-filter: grayscale(100%);
+    filter: grayscale(100%);
+    transition: all 0.5s ease;
+}
+
+img.organizer:hover {
+    -webkit-filter: grayscale(0%);
+    -moz-filter: grayscale(0%);
+    filter: grayscale(0%);
+}
+
