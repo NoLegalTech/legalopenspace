@@ -30,6 +30,9 @@ a {
   a:hover {
     text-decoration: none; }
 
+.small-font-size {
+  font-size: 1rem !important; }
+
 .regular-font-size {
   font-size: 1rem !important; }
 
@@ -1532,5 +1535,24 @@ img.organizer:hover {
     -webkit-filter: grayscale(0%);
     -moz-filter: grayscale(0%);
     filter: grayscale(0%);
+}
+
+div.pic-info {
+    background-color: rgba(255, 255, 255, 0.9);
+    position: relative;
+    top: 360px;
+    margin-right: 40px;
+}
+
+@media (max-width: 1000px) {
+    div.pic-info {
+        top: 330px;
+    }
+}
+
+@media (max-width: 650px) {
+    div.pic-info {
+        top: 300px;
+    }
 }
 
