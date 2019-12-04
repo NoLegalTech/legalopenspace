@@ -1454,3 +1454,44 @@ img.organizer {
 -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
     filter: grayscale(100%);
 }
+
+
+iframe.large {
+    display: inline;
+}
+iframe.big {
+    display: none;
+}
+iframe.medium {
+    display: none;
+}
+iframe.small {
+    display: none;
+}
+
+@media (max-width: 1199.98px) {
+    iframe.large {
+        display: none;
+    }
+    iframe.big {
+        display: inline;
+    }
+}
+
+@media (max-width: 991.98px) {
+    iframe.big {
+        display: none;
+    }
+    iframe.medium {
+        display: inline;
+    }
+}
+
+@media (max-width: 767.98px) {
+    iframe.medium {
+        display: none;
+    }
+    iframe.small {
+        display: inline;
+    }
+}
