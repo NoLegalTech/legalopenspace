@@ -33,6 +33,9 @@ a {
 .regular-font-size {
   font-size: 1rem !important; }
 
+.big-font-size {
+  font-size: 2rem !important; }
+
 .text-black {
   color: #000 !important; }
 
