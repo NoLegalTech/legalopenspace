@@ -3,9 +3,13 @@ body {
   line-height: 1.7;
   color: rgba(0, 0, 0, 0.5);
   font-weight: 400;
-  font-size: 1rem;
+  font-size: 20px;
   font-family: "Roboto Mono", SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   font-family: "Work Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; }
+
+@media (max-width: 768px) {
+  font-size: 25px;
+}
 
 ::-moz-selection {
   background: #000;
@@ -28,6 +32,9 @@ a {
 
 .regular-font-size {
   font-size: 1rem !important; }
+
+.big-font-size {
+  font-size: 2rem !important; }
 
 .text-black {
   color: #000 !important; }
@@ -107,7 +114,7 @@ a {
   padding: 3em 0; }
   @media (min-width: 768px) {
     .site-section {
-      padding: 7em 0; } }
+      padding: 4em 0; } }
   .site-section.site-section-sm {
     padding: 4em 0; }
 
@@ -636,7 +643,7 @@ a {
   height: 400px; }
   @media (max-width: 991.98px) {
     .site-block-half .image {
-      margin-bottom: 50px; } }
+      margin-bottom: 10px; } }
 
 .site-block-half .text {
   padding: 15px; }
@@ -1450,11 +1457,6 @@ a {
     transform: scale(1.05); }
 
 
-img.organizer {
--webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
-    filter: grayscale(100%);
-}
-
 
 iframe.large {
     display: inline;
@@ -1495,3 +1497,40 @@ iframe.small {
         display: inline;
     }
 }
+
+img.sponsor {
+    -webkit-filter: grayscale(100%);
+    -moz-filter: grayscale(100%);
+    filter: grayscale(100%);
+    transition: all 0.5s ease;
+}
+
+img.sponsor:hover {
+    -webkit-filter: grayscale(0%);
+    -moz-filter: grayscale(0%);
+    filter: grayscale(0%);
+}
+
+img.sponsor.fade {
+    transition: opacity 0.5s;
+    -webkit-transition: opacity 0.5s;
+    opacity: 0.5;
+}
+
+img.sponsor.fade:hover {
+    opacity: 1;
+}
+
+img.organizer {
+    -webkit-filter: grayscale(100%);
+    -moz-filter: grayscale(100%);
+    filter: grayscale(100%);
+    transition: all 0.5s ease;
+}
+
+img.organizer:hover {
+    -webkit-filter: grayscale(0%);
+    -moz-filter: grayscale(0%);
+    filter: grayscale(0%);
+}
+
