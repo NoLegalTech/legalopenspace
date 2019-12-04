@@ -114,7 +114,7 @@ a {
   padding: 3em 0; }
   @media (min-width: 768px) {
     .site-section {
-      padding: 7em 0; } }
+      padding: 4em 0; } }
   .site-section.site-section-sm {
     padding: 4em 0; }
 
@@ -643,7 +643,7 @@ a {
   height: 400px; }
   @media (max-width: 991.98px) {
     .site-block-half .image {
-      margin-bottom: 50px; } }
+      margin-bottom: 10px; } }
 
 .site-block-half .text {
   padding: 15px; }
